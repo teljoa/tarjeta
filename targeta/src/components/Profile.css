@@ -1,0 +1,74 @@
+.profile-horizontal {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 2rem;
+  width: 700px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-horizontal:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 2rem;
+  flex-shrink: 0;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h2 {
+  margin-bottom: 0.3rem;
+  color: #222;
+  font-size: 1.5rem;
+}
+
+.email {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 0.7rem;
+}
+
+.bio {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background: #007bff;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .profile-horizontal {
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+  }
+
+  .profile-photo {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
