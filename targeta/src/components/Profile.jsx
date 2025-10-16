@@ -19,13 +19,13 @@ function Profile({ url, name, email, bio, skills, isPremium }) {
         </p>
 
         {hasSkills && (
-          <div className="skills">
+          <ul className="skills-list">
             {skills.map((skill, index) => (
-              <span key={index} className="skill-tag">
+              <li key={index} className="skill-tag">
                 {skill}
-              </span>
+              </li>
             ))}
-          </div>
+          </ul>
         )}
 
         {isPremium && <span className="badge">Premium</span>}
