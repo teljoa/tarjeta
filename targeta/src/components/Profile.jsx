@@ -27,8 +27,6 @@ function Profile({ url, name, email, bio, skills, isPremium }) {
             ))}
           </ul>
         )}
-
-        {isPremium && <span className="badge">Premium</span>}
       </div>
     </div>
   );

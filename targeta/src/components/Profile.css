@@ -60,17 +60,6 @@
   }
 }
 
-.badge {
-  display: inline-block;
-  margin-top: 1rem;
-  background-color: gold;
-  color: #333;
-  font-weight: bold;
-  padding: 0.4rem 0.8rem;
-  border-radius: 12px;
-  font-size: 0.85rem;
-}
-
 .profile-horizontal.premium {
   border: 2px solid gold;
   box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
