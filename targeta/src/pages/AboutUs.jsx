@@ -1,30 +1,34 @@
 import Profile from "../components/Profile";
-import incontImg from "../assets/icon.png"
+import iconImg from "../assets/icon.png";
 
 function AboutUs() {
   const team = [
     {
       name: "John Doe",
       email: "johndoe@gmail.com",
-      bio: "Sofware developer with a passion for building web applications using JavaScript and React.",
-      url: incontImg,
-      skills: ["JavaScript","React","CSS","Node.js"],
+      bio: "Software developer with a passion for building web applications using JavaScript and React.",
+      url: iconImg,
+      skills: ["JavaScript", "React", "CSS", "Node.js"],
+      isPremium: true,
     },
     {
-      name: "John Doe",
-      email: "johndoe@gmail.com",
-      bio: "Sofware developer with a passion for building web applications using JavaScript and React.",
-      url: incontImg,
-      skills: ["JavaScript","React","CSS","Node.js"],
+      name: "Jane Smith",
+      email: "jane.smith@example.com",
+      bio: "",
+      url: "",
+      skills: [], 
+      isPremium: false,
     },
     {
-      name: "John Doe",
-      email: "johndoe@gmail.com",
-      bio: "Sofware developer with a passion for building web applications using JavaScript and React.",
-      url: incontImg,
-      skills: ["JavaScript","React","CSS","Node.js"],
+      name: "Carlos Díaz",
+      email: "carlos.diaz@example.com",
+      bio: "Backend developer especializado en Node.js y MongoDB.",
+      url: iconImg,
+      skills: ["Node.js", "Express", "MongoDB"],
+      isPremium: true,
     },
   ];
+
 
   return (
     <div>

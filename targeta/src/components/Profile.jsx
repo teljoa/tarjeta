@@ -1,21 +1,34 @@
 import "./Profile.css";
+import defaultImg from "../assets/defaults.jpg"
 
-function Profile({ url, name, email, bio, skills }) {
+function Profile({ url, name, email, bio, skills, isPremium }) {
+  const profileImg = url ? url : defaultImg;
+  const hasSkills = skills && skills.length > 0;
+  const hasBio = bio && bio.trim() !== "";
+
   return (
-    <div className="profile-horizontal">
-      <img src={url} alt={name} className="profile-photo" />
+    <div className={`profile-horizontal ${isPremium ? "premium" : ""}`}>
+      <img src={profileImg} alt={name} className="profile-photo" />
 
       <div className="profile-info">
+        <h2>{name}</h2>
         <p className="email">{email}</p>
-        <p className="bio">{bio}</p>
 
-        <div className="skills">
-          {skills.map((skill, index) => (
-            <span key={index} className="skill-tag">
-              {skill}
-            </span>
-          ))}
-        </div>
+        <p className="bio">
+          {hasBio ? bio : "Este usuario no ha añadido una bio aún."}
+        </p>
+
+        {hasSkills && (
+          <div className="skills">
+            {skills.map((skill, index) => (
+              <span key={index} className="skill-tag">
+                {skill}
+              </span>
+            ))}
+          </div>
+        )}
+
+        {isPremium && <span className="badge">Premium</span>}
       </div>
     </div>
   );
