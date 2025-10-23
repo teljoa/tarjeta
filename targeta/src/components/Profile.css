@@ -86,3 +86,30 @@
   border-radius: 20px;
   font-size: 0.85rem;
 }
+
+.fav-btn {
+  margin-top: 1rem;
+  background-color: transparent;
+  border: 2px solid #007bff;
+  color: #007bff;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.fav-btn:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.profile-horizontal.favorite {
+  background-color: #fff8e1; 
+  border: 2px solid #ffb300;
+  box-shadow: 0 0 15px rgba(255, 179, 0, 0.4);
+}
+
+.profile-horizontal.favorite h2 {
+  color: #ffb300;
+}
